@@ -11,10 +11,15 @@
 
 body{
     margin: 0;
-    font-family: "Euclid Circular A", "Poppins";
+    font-family: "Euclid Circular A", "Poppins", Arial, Helvetica, sans-serif;
     color: #f7f7f7;
     background: #f0ebeb;
 }
+
+.fa-brands{
+    text-decoration: none;
+}
+
 .material-symbols-outlined{
     margin-right: 3px;
     color: white;
@@ -68,7 +73,6 @@ html{
 /*  Header  */
 
 header{
-   
     display: flex;
     justify-content: center;
     background-color: #f0ebeb;
@@ -78,7 +82,9 @@ header{
     top: 0;
     overflow-x: hidden;
     align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.507);
 }
+
 
 nav{
     display: flex;
@@ -160,8 +166,29 @@ header nav img{
 }
 
 #img-slogan{
-    width: 30vw;
+    width: 500px;
+    height: 500px;
 }
+
+@media (width < 1500px){
+    #img-slogan{
+        width: 450px;
+        height: 450px;
+    }
+
+}
+
+
+@media (width < 900px){
+    #img-slogan{
+        width: 400px;
+        height: 400px;
+    }
+}  
+
+
+
+
 
 .div-slogan strong{
     color: #673de6;
@@ -180,7 +207,7 @@ header nav img{
     background-color: #673de6;
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 25px;
     font-family: "Euclid Circular A", "Poppins";
     font-size: 1em;
@@ -207,11 +234,45 @@ header nav img{
 }
 
 #img-slogan{
-    width: 90vw;
+    width: 450px;
+    height: 450px;
 }
 
 
 }
+
+@media (width < 500px){
+    #img-slogan{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (width < 350px){
+    #img-slogan{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+@media (width < 300px){
+    #img-slogan{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (width < 200px){
+    #img-slogan{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
 
 @media (min-width:750px) and (max-width: 999px){
 
@@ -329,6 +390,7 @@ header nav img{
     padding-top: 10vh;
 }
 
+
 .div-steps{
     display: flex;
     align-items: center;
@@ -430,7 +492,7 @@ header nav img{
 .button-prices{
     background-color: #4cc5c9;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
@@ -446,7 +508,7 @@ header nav img{
 
 .div-prices:hover{
     .button-prices{
-        padding: 12px;
+        padding: 12px 17px;
         border-radius: 25px;
     }
     
@@ -641,13 +703,13 @@ header nav img{
     color: white;
     text-decoration: none;
     background-color: #4cc5c9c5;
-    padding: 8px;
+    padding: 8px 16px;
     border-radius: 25px;
     transition: 0.5s;
 }
 
 .a-host:hover{
-    padding: 10px;
+    padding: 10px 18px;
     opacity: 0.9;
 }
 
@@ -698,7 +760,7 @@ header nav img{
     background-color: #4cc5c9;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
     margin-left: 50px;
     font-weight: 500;
@@ -706,7 +768,7 @@ header nav img{
 }
 
 #a-custom:hover{
-    padding: 12px;
+    padding: 12px 22px;
     margin-left: 46px;
     opacity: 0.8;
 }
@@ -791,6 +853,7 @@ header nav img{
     right: 30px;
     bottom: 30px;
     cursor: pointer;
+    color: white;
 }
 
 #button-wpp > a{
@@ -805,6 +868,10 @@ header nav img{
 
 }
 
+#button-wpp .fa-whatsapp{
+    color: white;
+}
+
 @media (width < 621px) {
 
 #button-wpp{    
@@ -813,6 +880,7 @@ header nav img{
     height: 31px;
     right: 26px;
     bottom: 26px;
+    color: white;
 }
 
 #button-wpp > a{
