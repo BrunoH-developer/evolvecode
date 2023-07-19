@@ -481,7 +481,7 @@ header nav img{
     text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    transition-delay: 0.2s;
 }
 
 .prices-p{
@@ -740,6 +740,69 @@ header nav img{
 
 
 /*   host end   */
+
+/*  faq */
+
+#container-faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-faq{
+    background-color: #673de6;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 50px;
+    
+}
+
+.div-faq span{
+    margin-left: 30px;
+}
+
+.text-faq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.div-faq:hover .p-faq{
+    display: block;
+    
+}
+
+.div-faq:hover .add{
+    display: none;
+}
+
+.div-faq:hover{
+    opacity: 0.9;
+
+}
+
+.p-faq{
+    transform: 0.5s;
+}
+
+
+.div-faq h3{
+    text-align: left;
+    
+}
+
+.div-faq p{
+    display: none;
+    transition: 6s;
+}
+
+/*  faq end */
 
 /*  Custom  */
 
