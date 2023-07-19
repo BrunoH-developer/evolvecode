@@ -762,6 +762,10 @@ header nav img{
     
 }
 
+#rem{
+    display: none;
+}
+
 .div-faq span{
     margin-left: 30px;
 }
@@ -780,6 +784,10 @@ header nav img{
 
 .div-faq:hover .add{
     display: none;
+}
+
+.div-faq:hover .remove{
+    display: block;
 }
 
 .div-faq:hover{
