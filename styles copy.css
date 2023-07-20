@@ -743,26 +743,26 @@ header nav img{
 
 /*  faq */
 
-#faq {
+#faq{
     margin-top: 15vh;
     margin-bottom: 25vh;
     transition: 0.5s;
-  }
-  
-  #container-faq {
+}
+
+#container-faq{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  #faq h1 {
+}
+
+#faq h1{
     text-align: center;
     color: #673de6;
     margin-bottom: 5vh;
-  }
-  
-  .div-faq {
+}
+
+.div-faq{
     background-color: #673de6;
     width: 40vw;
     display: flex;
@@ -771,52 +771,46 @@ header nav img{
     justify-content: center;
     margin: 10px;
     border-radius: 50px;
-    box-shadow: 2px 2px 10px #673de6;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
+    box-shadow: 0px 2px 10px #673de67e;
+}
 
-  .div-faq.active {
-    transform: scale(1.05);
-  }
-  
-  .text-faq {
+#rem{
+    display: none;
+}
+
+.div-faq span{
+    margin-left: 30px;
+}
+
+.text-faq{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
+}
 
-  .add {
-    display: inline-block;
-  }
-  
-  .rem {
-    display: none;
-  }
-  
-  .p-faq.show .rem {
-    display: inline-block;
-  }
-  
-  .p-faq.show .add {
-    display: none;
-  }
-
-  .p-faq {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
- 
-  .p-faq.show {
+.div-faq:hover .p-faq{
     display: block;
-    opacity: 1;
-  }
-  
-  
-  
+    
+}
+
+.div-faq:hover .add{
+    display: none;
+}
+
+.div-faq:hover #rem{
+    display: inline-block;
+}
+
+.p-faq{
+    transform: 0.5s;
+    transition: .4s;
+}
+
+
+.div-faq p{
+    display: none;
+}
+
 /*  faq end */
 
 /*  Custom  */
