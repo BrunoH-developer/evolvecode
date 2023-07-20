@@ -743,11 +743,23 @@ header nav img{
 
 /*  faq */
 
+#faq{
+    margin-top: 15vh;
+    margin-bottom: 25vh;
+
+}
+
 #container-faq{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#faq h1{
+    text-align: center;
+    color: #673de6;
+    margin-bottom: 5vh;
 }
 
 .div-faq{
@@ -757,9 +769,9 @@ header nav img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5px;
+    margin: 10px;
     border-radius: 50px;
-    
+    box-shadow: 0px 2px 10px #673de67e;
 }
 
 #rem{
@@ -774,7 +786,6 @@ header nav img{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .div-faq:hover .p-faq{
@@ -786,28 +797,18 @@ header nav img{
     display: none;
 }
 
-.div-faq:hover .remove{
-    display: block;
-}
-
-.div-faq:hover{
-    opacity: 0.9;
-
+.div-faq:hover #rem{
+    display: inline-block;
 }
 
 .p-faq{
     transform: 0.5s;
+    transition: .4s;
 }
 
-
-.div-faq h3{
-    text-align: left;
-    
-}
 
 .div-faq p{
     display: none;
-    transition: 6s;
 }
 
 /*  faq end */
