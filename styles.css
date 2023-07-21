@@ -760,6 +760,7 @@ header nav img{
     text-align: center;
     color: #673de6;
     margin-bottom: 5vh;
+    
   }
   
   .div-faq {
@@ -776,6 +777,10 @@ header nav img{
     transition: transform 0.3s ease;
   }
   
+  .div-faq h3{
+    font-size: 18px;
+  }
+
 
   .div-faq.active {
     transform: scale(1.05);
@@ -808,6 +813,8 @@ header nav img{
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease;
+    font-size: 15px;
+    text-align: center;
   }
  
   .p-faq.show {
@@ -815,6 +822,41 @@ header nav img{
     opacity: 1;
   }
   
+
+  @media (width < 1200px){
+    .div-faq{
+        width: 50vw;
+    }
+
+    .div-faq h3{
+        font-size: 15px;
+    }
+  }
+
+  @media (width < 900px){
+    .div-faq{
+        width: 70vw;
+    }
+   }
+
+   @media (width < 550px){
+    .div-faq{
+        width: 90vw;
+    }
+
+    .div-faq h3{
+        font-size: 13px;
+        width: 70vw;
+        text-align: center;
+    }
+
+    .p-faq{
+        font-size: 13px;
+        width: 70vw;
+    }
+
+    }
+
   
   
 /*  faq end */
