@@ -262,6 +262,12 @@ header nav img{
         width: 250px;
         height: 250px;
     }
+
+    #button-convert{
+        font-size: 0.8em;
+    }
+
+
 }
 
 @media (width < 200px){
