@@ -13,7 +13,7 @@ body{
     margin: 0;
     font-family: "Euclid Circular A", "Poppins", Arial, Helvetica, sans-serif;
     color: #f7f7f7;
-    background: #f0ebeb;
+    background: #F5F7FC;
 }
 
 .fa-brands{
@@ -43,12 +43,12 @@ html{
 
 [data-anime] {
     opacity: 0;
-    transition: .8s;
+    transition:.4s;
 }
 
 [data-anime = "bottom"] {
-    transform: translate3d(0px, 150px, 0px);
-    transition: .5s;
+    transform: translate3d(0px, 100px, 0px);
+    transition: .4s;
 }
 
 [data-anime].animate{
@@ -57,11 +57,11 @@ html{
 }
 
 [data-anime = "left"] {
-    transform: translate3d(-200px, 0px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
 }
 
 [data-anime = "right"] {
-    transform: translate3d(200px, 0px, 0px);
+    transform: translate3d(100px, 0px, 0px);
 }
 
     
@@ -72,17 +72,18 @@ html{
 
 /*  Header  */
 
+
+
 header{
     display: flex;
     justify-content: center;
-    background-color: #f0ebeb;
-    border-bottom: solid 2px #673de6;
+    background-color: #F5F7FC;
     position: fixed;
     z-index: 999;
     top: 0;
     overflow-x: hidden;
     align-items: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.507);
+
 }
 
 
@@ -94,7 +95,7 @@ nav{
 }
 
 nav a{
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-decoration: none;
     margin: 10px;
     font-weight: 500;
@@ -109,6 +110,7 @@ header nav img{
     height: 65px;
     margin-top: 5px;
 }
+
 
 
 @media (width < 750px) {
@@ -149,16 +151,15 @@ header nav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #4cc5c9;
+    color: #727272;
     margin-top: 20vh;
 }
 
 .div-slogan{
-    padding: 40px;
     text-align: center;
     height: auto;
     text-align: left;
-    
+    padding: 40px;
 }
 
 #div-slogan1{
@@ -170,11 +171,76 @@ header nav img{
     height: 500px;
 }
 
+#h1-slogan{
+    font-size: 40px;
+}
+
+#p-slogan{
+    font-size: 18px;
+    width: 33vw;
+    margin-bottom: 30px;
+}
+
+.div-slogan strong{
+    color: #673de6;
+    font-weight: bolder;
+
+}
+
+#h1-slogan{
+    width: 26vw;  
+    text-align: left;
+    margin-bottom: 2vh;
+    
+}
+
+#button{
+    background-color: #673de6;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-family: "Euclid Circular A", "Poppins";
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    align-items: center;
+}
+
+#img-trophy{
+    height: 19px;
+}
+
+#button-convert{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#button:hover{
+    opacity: 0.8;
+
+}
+
+
+
 @media (width < 1500px){
     #img-slogan{
         width: 450px;
         height: 450px;
     }
+
+    #h1-slogan{
+        width: 40vw;
+        font-size: 30px;
+    }
+
+    #p-slogan{
+        width: 40vw;
+    }
+
+   
 
 }
 
@@ -184,59 +250,47 @@ header nav img{
         width: 400px;
         height: 400px;
     }
+
+   
 }  
 
-
-
-
-
-.div-slogan strong{
-    color: #673de6;
-    font-weight: bolder;
-    font-size: 1.1em;
-}
-
-#h1-slogan{
-    width: 29vw;  
-    text-align: left;
-    margin-bottom: 5vh;
-    
-}
-
-#button-convert{
-    background-color: #673de6;
-    color: white;
-    text-decoration: none;
-    padding: 15px 25px;
-    border-radius: 25px;
-    font-family: "Euclid Circular A", "Poppins";
-    font-size: 1em;
-}
-
-#button-convert:hover{
-    opacity: 0.8;
-
-}
-
 @media (width < 750px) {
+
+header{
+    position: absolute;
+    box-shadow: 0px 0px 20px #673de68f;
+}
+
 #container-slogan{
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-top: 13vh;
+    justify-content: center;
+    text-align: center;
 }
 
-#h1-slogan{
-    width: 90vw;
-    font-size: 1.1em;
-}
-
-.div-slogan{
-    padding: 8px;
-}
 
 #img-slogan{
     width: 450px;
     height: 450px;
 }
+
+#h1-slogan{
+    width: 90vw;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 0;
+}
+
+#p-slogan{
+    width: 90vw;
+    text-align: center;
+}
+
+#button{
+    margin: auto;
+    width: 60vw;
+}
+
 
 
 }
@@ -246,12 +300,26 @@ header nav img{
         width: 350px;
         height: 350px;
     }
+
+    #button{
+        width: 80vw;
+    }
 }
 
 @media (width < 350px){
     #img-slogan{
         width: 300px;
         height: 300px;
+    }
+
+    #h1-slogan{
+        font-size: 30px;
+        width: 90vw;
+        margin-top: 30px;
+    }
+
+    #p-slogan{
+        width: 90vw;
     }
 }
 
@@ -282,20 +350,15 @@ header nav img{
 
 @media (min-width:750px) and (max-width: 999px){
 
-#h1-slogan{
-    width: 40vw;
-    font-size: 1.3em;
-}
 
 #img-slogan{
     width: 40vw;
 }
 
 #container-slogan{
-    
+ 
     margin-top: 20vh;
 }
-
 
 
 
@@ -306,17 +369,22 @@ header nav img{
 
 /*  Services   */
 
-
+#wave-services{
+    margin-bottom: -16px;
+    width: 100%;
+}
 
 #services{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 30vh;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: #673de6;
-    padding: 80px;
+    padding-top: 20px;
     overflow: hidden;
+    padding-bottom: 20px;
     text-align: left;
 }
 
@@ -381,6 +449,12 @@ header nav img{
 
 /*  Steps   */
 
+#wave-steps{
+
+    width: 100%;
+    
+}
+
 #steps{
     display: flex;
     justify-content: center;
@@ -406,7 +480,7 @@ header nav img{
 
 .text-steps{
     width: 30vw;
-    color: #673de6;
+    color: #727272;
     font-weight: lighter;
     font-size: 1.2em;
     text-align: left;
@@ -539,15 +613,24 @@ header nav img{
 
 /*  Seven   */
 
+#wave-seven{
+    width: 100%;
+    margin-bottom: -16px;
+}
+
+#wave-end{
+    width: 100%;
+    
+}
+
 #seven{
     background-color: #673de6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin-top: 15vh;
-    
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #seven strong{
@@ -1032,7 +1115,7 @@ header nav img{
 }
 #footer{
     width: 100%;
-    background-color: #f0ebeb;
+    background-color: #f7f7f7;
     margin-top: 10vh;
 }
 

@@ -23,3 +23,20 @@ faqItems.forEach(item => {
     }
   });
 });
+
+
+
+  $(document).ready(function() {
+
+    function addHeaderShadow() {
+      var scrollTop = $(window).scrollTop();
+      var header = $('.header');
+
+      if (scrollTop > 0) {
+        header.addClass('header');
+      } else {
+        header.removeClass('header');
+      }
+    }
+    $(window).on('load scroll', addHeaderShadow);
+  });
