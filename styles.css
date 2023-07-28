@@ -580,10 +580,6 @@ header{
     display: flex;
 }
 
-.img-seven{
-
-}
-
 .p-seven{
     min-height: 150px;
     text-align: center;
@@ -763,7 +759,6 @@ header{
 
 #faq {
     margin-top: 15vh;
-    margin-bottom: 25vh;
     transition: 0.5s;
   }
   
