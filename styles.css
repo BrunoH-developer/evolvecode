@@ -1,19 +1,20 @@
 
 @charset "UTF-8";
 
-/*
+:root{
+    --branco-body: #F5F7FC;
+    --Roxo: #673de6;
+    --Azul:#4cc5c9 ;
+    --Cinza:#727272 ;
 
-#0D77A0 AZUL CLARO
-#7363C7 LILAS
-#9347DB ROXO
-#4cc5c9 ciano
-*/
+}
+
 
 body{
     margin: 0;
     font-family: "Euclid Circular A", "Poppins", Arial, Helvetica, sans-serif;
+    background: var(--branco-body);
     color: #f7f7f7;
-    background: #F5F7FC;
 }
 
 .fa-brands{
@@ -64,52 +65,46 @@ html{
     transform: translate3d(100px, 0px, 0px);
 }
 
-    
-
-
-
-
-
 /*  Header  */
 
 
-
-header{
+header {
     display: flex;
     justify-content: center;
-    background-color: #F5F7FC;
+    background-color: var(--branco-body);
     position: fixed;
     z-index: 999;
     top: 0;
     overflow-x: hidden;
     align-items: center;
-
-}
-
-
-nav{
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100vw;
-}
-
-nav a{
+    
+  }
+  
+  nav a {
     font-size: 1.3em;
     text-decoration: none;
     margin: 10px;
     font-weight: 500;
-    color: #673de6;
-}
-
-nav a:hover{
+    color: var(--Roxo);
+    transition: .5s;
+  }
+  
+  nav a:hover {
     opacity: 0.5;
-}
-
-header nav img{
+  }
+  
+  header nav img {
     height: 65px;
     margin-top: 5px;
-}
+  }
 
 
 
@@ -153,7 +148,7 @@ header nav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #727272;
+    color: var(--Cinza);
     margin-top: 20vh;
 }
 
@@ -184,7 +179,7 @@ header nav img{
 }
 
 .div-slogan strong{
-    color: #673de6;
+    color: var(--Roxo);
     font-weight: bolder;
 
 }
@@ -197,7 +192,7 @@ header nav img{
 }
 
 #button{
-    background-color: #673de6;
+    background-color: var(--Roxo);
     color: white;
     text-decoration: none;
     padding: 15px 25px;
@@ -241,9 +236,6 @@ header nav img{
     #p-slogan{
         width: 40vw;
     }
-
-   
-
 }
 
 
@@ -253,11 +245,9 @@ header nav img{
     height: 400px;
 }
 
-   
 }  
 
 @media (width < 750px) {
-
 .div-slogan{
     padding: 0;
 }
@@ -328,8 +318,6 @@ header{
     }
 }
 
-
-
 @media (width < 300px){
     #img-slogan{
         width: 250px;
@@ -396,7 +384,7 @@ header{
     align-items: center;
     margin-top: 0;
     margin-bottom: -2px;
-    background-color: #673de6;
+    background-color: var(--Roxo);
     padding-top: 35px;
     overflow: hidden;
     padding-bottom: 20px;
@@ -406,8 +394,6 @@ header{
 #container-services{
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .div-services{
@@ -418,7 +404,6 @@ header{
     text-align: center;
     margin: 40px;
     margin-top: 10vh;
- 
 }
 
 .titles{
@@ -462,84 +447,11 @@ header{
 /*  Services end   */
 
 
-/*  Steps   */
-
 #wave-steps{
-
     width: 100%;
-    
-}
-
-#steps{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-#container-steps{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 10vh;
 }
 
 
-.div-steps{
-    display: flex;
-    align-items: center;
-   
-
-}
-
-.text-steps{
-    width: 30vw;
-    color: #727272;
-    font-weight: lighter;
-    font-size: 1.2em;
-    text-align: left;
-}
-
-@media (width < 750px){
-
-.div-steps{
-    flex-direction: column;
-    padding: 20px;
-}
-
-.text-steps{
-    width: 80vw;
-    font-size: 1em;
-    text-align: left;
-}
-
-.steps-reverse{
-    flex-direction: column-reverse;
-}
-
-.div-steps img{
-    width: 90vw;
-}
-}
-
-@media (min-width:750px) and (max-width: 999px){
-
-.div-steps img{
-    width: 50vw;
-} 
-
-.text-steps{
-    width: 40vw;
-    font-size: 1em;
-    text-align: left;
-}
-
-
-}
-
-
-/*  Steps end   */
 
 /*  Price   */
 
@@ -554,11 +466,11 @@ header{
     justify-content: center;
     text-align: center;
     margin-top: 10vh;
-    
+    margin-bottom: 10vh;
 }
 
 .div-prices{
-    background-color: #673de6;
+    background-color: var(--Roxo);
     padding: 40px;
     margin: 20px;
     border-radius: 30px;
@@ -585,7 +497,7 @@ header{
 }
 
 .button-prices{
-    background-color: #4cc5c9;
+    background-color: var(--Azul);
     color: white;
     padding: 10px 15px;
     border-radius: 20px;
@@ -596,7 +508,7 @@ header{
 
 .div-prices:hover{
     margin: 15px;
-    background-color: #673de6;
+    background-color: var(--Roxo);
     padding: 45px;
     
 }
@@ -639,7 +551,7 @@ header{
 }
 
 #seven{
-    background-color: #673de6;
+    background-color: var(--Roxo);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -650,7 +562,7 @@ header{
 }
 
 #seven strong{
-    color: #4cc5c9;
+    color: var(--Azul);
 }
 
 #container-seven{
@@ -730,7 +642,7 @@ header{
 }
 
 .div-host{
-    background-color: #673de6;
+    background-color: var(--Roxo);
     margin: 30px;
     padding: 40px;
     text-align: center;
@@ -767,7 +679,7 @@ header{
 }
 
 .div-eco h3{
-    color: #4cc5c9;
+    color: var(--Azul);
     background-color: #4cc5c925;
     border-radius: 20px;
     padding: 3px;
@@ -798,7 +710,7 @@ header{
 }
 
 .p{
-    color: #673de6;
+    color: var(--Roxo);
 }
 
 .divprice-host{
@@ -864,13 +776,13 @@ header{
   
   #faq h1 {
     text-align: center;
-    color: #673de6;
+    color: var(--Roxo);
     margin-bottom: 5vh;
     
   }
   
   .div-faq {
-    background-color: #673de6;
+    background-color: var(--Roxo);
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -878,7 +790,7 @@ header{
     justify-content: center;
     margin: 10px;
     border-radius: 50px;
-    box-shadow: 2px 2px 10px #673de6;
+    box-shadow: 2px 2px 10px var(--Roxo);
     cursor: pointer;
     transition: transform 0.3s ease;
   }
@@ -971,7 +883,7 @@ header{
 
 #custom{
     display: flex;
-    background-color: #673de6;
+    background-color: var(--Roxo);
     align-items: center;
     justify-content: center;
     margin-top: 100px;
@@ -983,7 +895,7 @@ header{
 }
 
 #a-custom{
-    background-color: #4cc5c9;
+    background-color: var(--Azul);
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -998,8 +910,8 @@ header{
     margin-left: 46px;
     opacity: 0.8;
 }
-@media (width < 900px){
 
+@media (width < 900px){
 #custom{
     flex-direction: column;
 }
@@ -1017,7 +929,6 @@ header{
 }
 
 @media (width < 550px){
-
 #call-custom{
     margin-right: 0;
     font-size: 1.2em;
@@ -1132,7 +1043,7 @@ header{
 }
 #footer{
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: var(--branco-body);
     margin-top: 10vh;
 }
 
@@ -1177,11 +1088,11 @@ footer {
 }
 
 footer {
-    color: #673de6;
+    color: var(--Roxo);
 }
 
 footer.top {
-    border-bottom: 2px solid #673de6;
+    border-bottom: 2px solid var(--Roxo);
     padding-bottom: 20px;
     justify-content: center;
     align-items: center;
@@ -1205,12 +1116,7 @@ footer.top .links {
     margin-bottom: 30px;
 }
 
-footer h2 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: #a2b5cd;
-}
+
 
 .legal {
     font-size: 12px;

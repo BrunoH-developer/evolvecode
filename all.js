@@ -26,17 +26,14 @@ faqItems.forEach(item => {
 
 
 
-  $(document).ready(function() {
+function addShadowOnScroll() {
+  const header = document.querySelector("header");
+  const scrollY = window.scrollY;
 
-    function addHeaderShadow() {
-      var scrollTop = $(window).scrollTop();
-      var header = $('.header');
-
-      if (scrollTop > 0) {
-        header.addClass('header');
-      } else {
-        header.removeClass('header');
-      }
-    }
-    $(window).on('load scroll', addHeaderShadow);
-  });
+  if (scrollY > 0) {
+    header.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.5)";
+  } else {
+    header.style.boxShadow = "none";
+  }
+}
+window.addEventListener("scroll", addShadowOnScroll);
