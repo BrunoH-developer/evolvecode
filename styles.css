@@ -113,6 +113,8 @@ header nav img{
 
 
 
+
+
 @media (width < 750px) {
     header nav img{
         height: 66px;
@@ -246,10 +248,10 @@ header nav img{
 
 
 @media (width < 900px){
-    #img-slogan{
-        width: 400px;
-        height: 400px;
-    }
+#img-slogan{
+    width: 400px;
+    height: 400px;
+}
 
    
 }  
@@ -269,7 +271,7 @@ header{
     flex-direction: column;
     margin-top: 13vh;
     justify-content: center;
-    text-align: center;
+    
     
 }
 
@@ -281,23 +283,18 @@ header{
 
 #h1-slogan{
     width: 90vw;
-    font-size: 40px;
-    text-align: center;
+    font-size: 35px;
     margin-right: 0;
 }
 
 #p-slogan{
-    width: 90vw;
-    text-align: center;
+    width: 90vw; 
 }
 
 #button{
     margin: auto;
     width: 60vw;
 }
-
-
-
 }
 
 @media (width < 500px){
@@ -308,6 +305,7 @@ header{
 
     #button{
         width: 80vw;
+        text-align: center;
     }
 }
 
@@ -321,10 +319,12 @@ header{
         font-size: 30px;
         width: 90vw;
         margin-top: 30px;
+        text-align: left;
     }
 
     #p-slogan{
         width: 90vw;
+        text-align: left;
     }
 }
 
@@ -337,8 +337,18 @@ header{
     }
 
     #button-convert{
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
+    #h1-slogan{
+        font-size: 25px;
+        width: 85vw;
+        margin-top: 40px;
+    }
+
+    #p-slogan{
+        width: 85vw;
+    }
+
 
 
 }
@@ -385,9 +395,9 @@ header{
     flex-direction: column;
     align-items: center;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: -2px;
     background-color: #673de6;
-    padding-top: 20px;
+    padding-top: 35px;
     overflow: hidden;
     padding-bottom: 20px;
     text-align: left;
@@ -635,7 +645,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    margin-bottom: 0;
+    padding-top: 30px;
+    margin-bottom: -2px;
 }
 
 #seven strong{
@@ -689,6 +700,7 @@ header{
 @media (width < 600px){
 .title-seven{
     font-size: 1.2em;
+    text-align: center;
 }
 
 }
